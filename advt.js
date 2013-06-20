@@ -1,4 +1,1 @@
-function myFunction()
-{
-alert("Hello World!");
-}
+(function() {console.log("Node count: ");})();
