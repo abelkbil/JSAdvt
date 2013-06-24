@@ -15,11 +15,15 @@
   var to = window.fb_ad_client;
 if ( to ) {
   // prevent cross-site scripting attacks
-  to = unescape( to.toString() );
-  to = to.replace(/</g, '&lt;');
-  to = to.replace(/>/g, '&gt;');
+ // to = unescape( to.toString() );
+ // to = to.replace(/</g, '&lt;');
+ // to = to.replace(/>/g, '&gt;');
   // send our output along
-  document.write( '<b><i>Hello ' + to + '!</i></b>');
+  var img=240;
+  if(fb_ad_width>240){
+  	img=340;
+  }
+  document.write( '<img src="'+img'.jpg">');
 }
 	})();
 //http://feather.elektrum.org/book/src.html
